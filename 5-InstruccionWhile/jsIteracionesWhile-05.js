@@ -1,12 +1,20 @@
 /*
-Al presionar el botón pedir un sexo
-'f' para femenino, 'm' para masculino.*/
+Soria Paul
+Div E
+While Ejercicio 5
+
+Al presionar el botón pedir un sexo 'f' para femenino, 'm' para masculino.*/
 function mostrar()
 {
-	var sexoIngresado;
-	sexoIngresado = prompt("ingrese f ó m .");
+	let genero;
 
+	genero = prompt("Ingrese su genero");
 
+	while ( !(genero == 'f' || genero == 'm') )
+	{
+		alert("Dato incorrecto");
+		genero = prompt("Ingrese su genero");
+	}
 
-	txtIdSexo.value=sexoIngresado;
+	document.getElementById("txtIdSexo").value = genero;
 }//FIN DE LA FUNCIÓN
